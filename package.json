@@ -4,12 +4,17 @@
   "description": "Alien Game for Learning HTML5 Canvas",
   "main": "script.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "npx eslint .",
+    "lint:fix": "npm run lint -- --fix",
+    "prettier": "npx prettier . --check",
+    "prettier:fix": "npm run prettier -- --write",
+    "format": "npm run prettier:fix && npm run lint:fix"
   },
   "author": "paul-macfarlane",
   "license": "ISC",
   "devDependencies": {
     "eslint": "^8.30.0",
+    "eslint-config-prettier": "^8.5.0",
     "prettier": "2.8.1"
   }
 }
