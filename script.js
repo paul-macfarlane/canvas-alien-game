@@ -63,7 +63,7 @@ window.addEventListener('load', function (){
             this.angle = 0
             this.velecityOfAngle = Math.random() * 0.2 - 0.1
             this.bounced = 0
-            this.bottomBounceBoundary = Math.random() * 100 + 60
+            this.bottomBounceBoundary = Math.random() * 80 + 60
         }
         update(){
             this.angle += this.velecityOfAngle
@@ -157,7 +157,7 @@ window.addEventListener('load', function (){
         enterPowerUp(){
             this.powerUpTimer = 0
             this.powerUp = true
-            this.game.ammo = this.game.maxAmmo
+            if (this.game.ammo < this.game.maxAmmo) this.game.ammo = this.game.maxAmmo
         }
     }
     class Enemy {
@@ -334,7 +334,7 @@ window.addEventListener('load', function (){
             this.gameTime = 0
             this.timeLimit = 15000
             this.speed = 1
-            this.debug = true
+            this.debug = false
         }
         update(deltaTime){
             if (!this.gameOver) this.gameTime += deltaTime
@@ -386,8 +386,8 @@ window.addEventListener('load', function (){
         }
         draw(context){
             this.background.draw(context)
-            this.player.draw(context)
             this.ui.draw(context)
+            this.player.draw(context)
             this.particles.forEach(particle => particle.draw(context))
             this.enemies.forEach(enemy => {
                 enemy.draw(context)
