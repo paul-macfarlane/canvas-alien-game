@@ -1,4 +1,4 @@
-# Alien Game
+# 2D Canvas Alien Game
 This repo contains the source code for a 2D Alien Shooter Game. All that was needed
 was HTML, CSS, and Javascript. No frameworks needed. The game and most of its code came from
 me coding along to the following YouTube video from freeCodeCamp.org: https://www.youtube.com/watch?v=7BHs1BzA4fs.
