@@ -5,6 +5,9 @@ me coding along to the following YouTube video from freeCodeCamp.org: https://ww
 
 ![](./assets/game-screenshot.png)
 
+## Playing the game
+Open [index.html](./index.html) in a browser of your choice and have fun!
+
 ## Game Rules
 
 The rules are simple. You play as a Mechanical Seahorse that can move up and down. Destroy your enemies as they approach you with your Seahorse's ammunition. 
